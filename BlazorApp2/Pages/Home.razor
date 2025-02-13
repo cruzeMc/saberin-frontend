@@ -1,0 +1,46 @@
+@page "/"
+@inject NavigationManager NavigationManager
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h1 class="display-4">Welcome to Contact Manager</h1>
+                    <p class="lead">Manage your contacts quickly and efficiently.</p>
+                    <div class="input-group my-4">
+                        <input type="text" class="form-control form-control-lg"
+                               placeholder="Search contacts by name..." 
+                               @bind="_searchTerm"
+                               @bind:event="oninput"
+                               @onkeydown="HandleKeyDown"
+                               />
+                        <button class="btn btn-outline-primary btn-lg" type="button" @onclick="Search">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string _searchTerm = "";
+
+    private void Search()
+    {
+        if (!string.IsNullOrWhiteSpace(_searchTerm))
+        {
+            NavigationManager.NavigateTo($"/search?query={Uri.EscapeDataString(_searchTerm)}");
+        }
+    }
+
+    private void HandleKeyDown(KeyboardEventArgs args)
+    {
+        if (args.Key == "Enter")
+        {
+            Search();
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@page "/createcontact"
+@using BlazorApp2.Services
+@using ClassLibrary1.DTOs
+@inject ContactService contactService
+@inject NavigationManager NavigationManager
+
+<div class="container my-5">
+    <div class="card shadow">
+        <div class="card-header bg-success text-white">
+            <h3 class="mb-0">Create New Contact</h3>
+        </div>
+        <div class="card-body">
+            <EditForm Model="contact" OnValidSubmit="HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <!-- Basic Information -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <InputText id="firstName" class="form-control" @bind-Value="contact.FirstName" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <InputText id="lastName" class="form-control" @bind-Value="contact.LastName" />
+                    </div>
+                </div>
+
+                <!-- Address Details -->
+                <h5 class="mt-4 mb-3">Address Details</h5>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="street" class="form-label">Street</label>
+                        <InputText id="street" class="form-control" @bind-Value="address.Street" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="city" class="form-label">City</label>
+                        <InputText id="city" class="form-control" @bind-Value="address.City" />
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">State</label>
+                        <InputText id="state" class="form-control" @bind-Value="address.State" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="zip" class="form-label">ZIP Code</label>
+                        <InputText id="zip" class="form-control" @bind-Value="address.ZipCode" />
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex justify-content-end mt-4">
+                    <button type="button" class="btn btn-secondary me-2" @onclick="BackToContacts">Cancel</button>
+                    <button type="submit" class="btn btn-success">Create Contact</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    private ContactDTO contact = new ContactDTO();
+    private AddressDTO address = new AddressDTO();
+
+    protected override void OnInitialized()
+    {
+        // Initialize the Addresses list with one address entry for binding
+        contact.Addresses.Add(address);
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await contactService.CreateContact(contact);
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/contacts");
+        }
+        else
+        {
+            // Optionally, display an error message here
+        }
+    }
+
+    private void BackToContacts()
+    {
+        NavigationManager.NavigateTo("/contacts");
+    }
+}

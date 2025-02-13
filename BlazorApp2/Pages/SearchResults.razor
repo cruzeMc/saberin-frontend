@@ -1,0 +1,96 @@
+@page "/search"
+@using BlazorApp2.Services
+@using ClassLibrary1.DTOs
+@inject ContactService contactService
+@inject NavigationManager NavigationManager
+
+<h2>Search Results for "@Query"</h2>
+
+@if (searchResults == null)
+{
+    <p>Loading results...</p>
+}
+else if (!searchResults.Any())
+{
+    <p>No contacts found matching "@Query".</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip Code</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var contact in searchResults)
+            {
+                var primaryAddress = contact.Addresses.FirstOrDefault();
+                <tr>
+                    <td>@contact.FirstName</td>
+                    <td>@contact.LastName</td>
+                    <td>@(primaryAddress?.City ?? "N/A")</td>
+                    <td>@(primaryAddress?.State ?? "N/A")</td>
+                    <td>@(primaryAddress?.ZipCode ?? "N/A")</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" @onclick="() => ViewContact(contact.Id)">View</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between">
+        <button class="btn btn-secondary" @onclick="PreviousPage" disabled="@(pageNumber == 1)">Previous</button>
+        <span>Page @pageNumber</span>
+        <button class="btn btn-secondary" @onclick="NextPage" disabled="@(searchResults.Count < pageSize)">Next</button>
+    </div>
+}
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "query")]
+    public string Query { get; set; }
+
+    private List<ContactDTO> searchResults;
+    private int pageNumber = 1;
+    private int pageSize = 10;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadResults();
+    }
+
+    private async Task LoadResults()
+    {
+        searchResults = await contactService.SearchContacts(Query, pageNumber, pageSize);
+    }
+
+    private void ViewContact(int id)
+    {
+        NavigationManager.NavigateTo($"/viewcontact/{id}");
+    }
+
+    private async Task NextPage()
+    {
+        if (searchResults != null && searchResults.Count == pageSize)
+        {
+            pageNumber++;
+            await LoadResults();
+        }
+    }
+
+    private async Task PreviousPage()
+    {
+        if (pageNumber > 1)
+        {
+            pageNumber--;
+            await LoadResults();
+        }
+    }
+}
