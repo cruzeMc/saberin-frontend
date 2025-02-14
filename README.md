@@ -41,31 +41,30 @@ BlazorApp2/
    ```bash
     git clone <repository-url>
 
-2. Configure API Endpoint  
+2. **Navigate to the root directory:**
+   ```bash
+   cd {root directory}
+
+3. Configure API Endpoint  
    Modify appsettings.json to point to the backend API:
    ```bash
    "ApiSettings": {
          "BaseUrl": "http://localhost:5246/api/contact"
    }
 
-3. **Restore Dependencies:**  
-   From the solution root, run
+4. **Restore Dependencies:**  
     ```bash
     dotnet restore
 
-4. **Build the Project:**  
-   Navigate to the ClassLibrary1 directory and build the project:
+5. **Build the Project:**  
    ```bash
    dotnet build 
 
-5. **Run Tests:**  
-   If tests are provided (e.g., for mapping configurations or model validations), navigate to the test project folder
-   and run:
+6. **Run Tests:**  
    ```bash
    dotnet test
 
-6. **Run:**  
-   Run the API by executing:
+7. **Run:**  
    ```bash
    dotnet run
 
