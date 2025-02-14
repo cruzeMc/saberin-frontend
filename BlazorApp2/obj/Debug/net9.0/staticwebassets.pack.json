@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/BlazorApp2.styles.css"
     },
     {
+      "Id": "/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/wwwroot/appsettings.json",
+      "PackagePath": "staticwebassets/appsettings.json"
+    },
+    {
       "Id": "/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },

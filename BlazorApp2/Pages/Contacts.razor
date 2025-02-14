@@ -1,7 +1,7 @@
 @page "/contacts"
-@using BlazorApp2.Services
 @using ClassLibrary1.DTOs
-@inject ContactService contactService
+@using ClassLibrary1.Services
+@inject IContactService contactService
 @inject NavigationManager NavigationManager
 @inject ILogger<Contacts> Logger
 
@@ -71,7 +71,7 @@
             <button class="btn btn-secondary" @onclick="PreviousPage" disabled="@(pageNumber == 1)">Previous</button>
             <span>Page @pageNumber</span>
             <button class="btn btn-secondary" @onclick="NextPage"
-                    disabled="@(contacts != null && contacts.Count < pageSize)">Next
+                    disabled="@(contacts != null && contacts.Count() < pageSize)">Next
             </button>
         </div>
     </div>
@@ -100,7 +100,7 @@
 }
 
 @code {
-    private List<ContactDTO> contacts;
+    private IEnumerable<ContactDTO> contacts;
     private int pageNumber = 1;
     private int pageSize = 10;
 
@@ -117,8 +117,8 @@
 
     private async Task LoadContacts()
     {
-        contacts = await contactService.GetContacts(pageNumber, pageSize);
-        Logger.LogInformation("Loaded {Count} contacts.", contacts?.Count ?? 0);
+        contacts = await contactService.GetContactsAsync(pageNumber, pageSize);
+        Logger.LogInformation("Loaded {Count} contacts.", contacts?.Count() ?? 0);
     }
 
     private async void OnLocationChanged(object sender, LocationChangedEventArgs e)
@@ -146,7 +146,7 @@
 
     private async Task NextPage()
     {
-        if (contacts != null && contacts.Count == pageSize)
+        if (contacts != null && contacts.Count() == pageSize)
         {
             pageNumber++;
             await LoadContacts();
@@ -186,11 +186,10 @@
     {
         if (contactToDeleteId.HasValue)
         {
-            await contactService.DeleteContact(contactToDeleteId.Value);
+            await contactService.DeleteContactAsync(contactToDeleteId.Value);
             await LoadContacts();
             showDeleteModal = false;
             contactToDeleteId = null;
         }
     }
-
 }

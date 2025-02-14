@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2", "BlazorApp2\Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "..\ClassLibrary1\ClassLibrary1\ClassLibrary1.csproj", "{D1FA642B-6F0E-4031-8157-54C453F3489B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2.Test", "BlazorApp2.Test\BlazorApp2.Test.csproj", "{9C26DEEE-B3C6-484A-9AD5-1E38F69F549F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{D1FA642B-6F0E-4031-8157-54C453F3489B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1FA642B-6F0E-4031-8157-54C453F3489B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1FA642B-6F0E-4031-8157-54C453F3489B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C26DEEE-B3C6-484A-9AD5-1E38F69F549F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C26DEEE-B3C6-484A-9AD5-1E38F69F549F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C26DEEE-B3C6-484A-9AD5-1E38F69F549F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C26DEEE-B3C6-484A-9AD5-1E38F69F549F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

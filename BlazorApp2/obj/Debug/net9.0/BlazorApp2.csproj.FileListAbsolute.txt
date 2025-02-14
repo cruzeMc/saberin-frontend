@@ -1,9 +1,9 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/blazor.webassembly.js
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.dz2q5te4vu.pdb
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.exhwwnrg67.wasm
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.u7n0vb70xg.pdb
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.a44fcoug9u.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.y59z5pg4t7.pdb
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.ximys5omxx.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.qvqyid6742.pdb
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.pbhtzll8ek.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/dotnet.js
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/dotnet.js.map
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/dotnet.native.8o8n7iomrf.js
@@ -204,6 +204,10 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Xml.XPath.1c8x86y34z.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Xml.XPath.XDocument.vwdo924nyz.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/WindowsBase.ovqw333kan.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.abstractions.4ksum12hez.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.assert.y7eb9mzies.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.core.vzmut3xs2n.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.execution.dotnet.f9tlfgrcb7.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Resources.ResourceManager.9uorrdaogh.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Console.w0ay1b4srp.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.ComponentModel.1bvu7o7kso.wasm.gz
@@ -220,7 +224,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.Emit.ILGeneration.6hwdc9qxly.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Text.Json.j2r3lclw18.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.quncyez9vs.wasm.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.dz2q5te4vu.pdb.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.y59z5pg4t7.pdb.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.InteropServices.JavaScript.wts7elsoj1.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Private.Xml.9m32bkuaq9.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.Configuration.FileExtensions.omar8pgxm8.wasm.gz
@@ -230,6 +234,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Physical.59vcbg751z.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.4483uwth6m.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.JSInterop.gkumi7kxvo.wasm.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.assert.y7eb9mzies.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.VisualBasic.Core.bcw8auwqwc.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.Loader.5z1xrbq3gs.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/service-worker-assets.js.gz
@@ -237,6 +242,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Xml.XPath.XDocument.vwdo924nyz.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Security.Cryptography.Primitives.sio8tbcv7y.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.CompilerServices.Unsafe.mtlbkuc7bx.wasm.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.abstractions.4ksum12hez.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.wo2kjrze7x.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Windows.tativ8o637.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.IO.FileSystem.Primitives.7j619s2u6b.wasm.gz
@@ -278,7 +284,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.f0dx7f7ser.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Text.Encodings.Web.grd8pnwzq5.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Resources.Reader.09wnmnw7h6.wasm.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.u7n0vb70xg.pdb.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.qvqyid6742.pdb.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Net.Primitives.ppkhii4grn.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.DispatchProxy.1mvitd31h1.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Diagnostics.Tracing.qrb1u99ma2.wasm.gz
@@ -302,7 +308,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.oft8zow1u0.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.Serialization.6caw9o814c.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Net.Quic.6n4jzsrw88.wasm.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.a44fcoug9u.wasm.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/ClassLibrary1.pbhtzll8ek.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.Extensions.6pmkengf2g.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Dynamic.Runtime.zwh4o2uogo.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Net.Requests.cy4h9bs3pl.wasm.gz
@@ -337,7 +343,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.IO.Pipes.AccessControl.8jmdzj76k5.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Net.Http.Json.158hlj0e3x.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/dotnet.js.map.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.exhwwnrg67.wasm.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/BlazorApp2.ximys5omxx.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.Primitives.b2osjpgeyo.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.Logging.4m4jo20ji4.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.Extensions.849myor78y.wasm.gz
@@ -376,6 +382,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.IO.FileSystem.AccessControl.gqo8i3yxtl.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Text.Encoding.Extensions.nlydxjh19m.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Transactions.eqportussb.wasm.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.core.vzmut3xs2n.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Threading.Thread.i99sw2awmh.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.IO.Compression.FileSystem.fga5z7h1wd.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.Serialization.Primitives.3q7zsjzsco.wasm.gz
@@ -389,8 +396,10 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/dotnet.js.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Text.Encoding.CodePages.ykcj58k0je.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Net.WebClient.pe57fwwtmc.wasm.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/appsettings.json.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.AppContext.ch56s52ual.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Private.Uri.h9vk2avn0v.wasm.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/xunit.execution.dotnet.f9tlfgrcb7.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Net.WebSockets.Client.5n8jkuhz18.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Net.Http.67y0knk64j.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Globalization.Extensions.0at1e69ufq.wasm.gz
@@ -414,6 +423,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.TypeExtensions.elsa09wwcc.wasm.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/service-worker-assets.js
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/service-worker.js
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/wwwroot/appsettings.json
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/BlazorApp2.staticwebassets.runtime.json
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/BlazorApp2.staticwebassets.endpoints.json
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/BlazorApp2.dll
@@ -440,6 +450,10 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/Microsoft.JSInterop.dll
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/Microsoft.JSInterop.WebAssembly.dll
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/xunit.abstractions.dll
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/xunit.assert.dll
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/xunit.core.dll
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/xunit.execution.dotnet.dll
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/Microsoft.CSharp.dll
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/Microsoft.VisualBasic.Core.dll
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/bin/Debug/net9.0/Microsoft.VisualBasic.dll
@@ -626,6 +640,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/BlazorApp2.AssemblyInfo.cs
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/BlazorApp2.csproj.CoreCompileInputs.cache
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/BlazorApp2.MvcApplicationPartsAssemblyInfo.cache
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/BlazorApp2.sourcelink.json
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.AspNetCore.Authorization.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.AspNetCore.Components.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.AspNetCore.Components.Forms.wasm
@@ -648,6 +663,10 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.Extensions.Primitives.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.JSInterop.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.JSInterop.WebAssembly.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/xunit.abstractions.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/xunit.assert.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/xunit.core.wasm
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/xunit.execution.dotnet.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.CSharp.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.VisualBasic.Core.wasm
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/webcil/Microsoft.VisualBasic.wasm
@@ -828,7 +847,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/service-worker/service-worker-assets.js.build
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/service-worker/service-worker.js.build
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/dx04kgrn2j-xd83rnx73q.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/n1ua0rodfj-l0rrjhbqvo.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/n1ua0rodfj-gipkripfhe.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/xbpcgmmzrt-bqjiyaj88i.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/z7l37vvf68-c2jlpeoesf.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/hv3gscxjvz-erw9l3u2r3.gz
@@ -874,6 +893,7 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/jy7fnwrkw0-63fj8s7r0e.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/p7er5y41d7-4qql4rq082.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/7hnwv4pe7e-woptexke75.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/wvgu0p6qr5-injcwpbpi8.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/krl3rrnfxf-md9yvkcqlf.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/45h1g4lm71-oyo8txta70.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/1x4gao2xho-oyo8txta70.gz
@@ -899,6 +919,10 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/7aa6vjgg80-3pkwbmnqmy.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/363txxkn8u-gkumi7kxvo.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/lul34zbdi6-wzrhx8t8bu.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/4jxowz86ti-4ksum12hez.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/384c3bw9lp-y7eb9mzies.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/ua55uzsvj8-vzmut3xs2n.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/xm15fnws56-f9tlfgrcb7.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/syyu3ten4r-0krj4ve566.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/3flcky6tv5-bcw8auwqwc.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/171fr7orjc-ezua2clavb.gz
@@ -1077,13 +1101,13 @@
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/izyiyh0et1-tjcz0u77k5.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/z8enxb6h4h-tptq2av103.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/dj91qeo2xz-lfu7j35m59.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/ht4zs6eeha-a44fcoug9u.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/d372x5j6es-u7n0vb70xg.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/mp3msp8ff4-exhwwnrg67.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/2099b471ik-dz2q5te4vu.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/ze7vl5o02k-s3lhkmi4kc.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/p3wksrrh4u-owlh6w30of.gz
-/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/3obyjgofb0-j3xcpf49yl.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/ht4zs6eeha-pbhtzll8ek.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/d372x5j6es-qvqyid6742.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/mp3msp8ff4-ximys5omxx.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/2099b471ik-y59z5pg4t7.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/ze7vl5o02k-rywgb7is73.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/p3wksrrh4u-w5ow5hc7uh.gz
+/Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/compressed/3obyjgofb0-8iey3fcgck.gz
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/staticwebassets.build.json
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/staticwebassets.development.json
 /Users/cruzemcfarlane/RiderProjects/BlazorApp2/BlazorApp2/obj/Debug/net9.0/staticwebassets.build.endpoints.json

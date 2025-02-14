@@ -1,92 +1,60 @@
 using System.Net.Http.Json;
 using ClassLibrary1.DTOs;
+using ClassLibrary1.Services;
 
 namespace BlazorApp2.Services
 {
-    public class ContactService
+    namespace BlazorApp2.Services
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _baseUrl;
-
-        public ContactService(HttpClient httpClient)
+        public class ContactService : IContactService
         {
-            _httpClient = httpClient;
-            // In a real app, you might inject IConfiguration or use a named HttpClient.
-            _baseUrl = "http://localhost:5246/api/contact";
-        }
+            private readonly HttpClient _httpClient;
+            private readonly string _baseUrl;
 
-        public async Task<List<ContactDTO>> GetContacts(int pageNumber, int pageSize)
-        {
-            try
+            public ContactService(HttpClient httpClient, IConfiguration configuration)
             {
-                var contacts = await _httpClient.GetFromJsonAsync<List<ContactDTO>>(
-                    $"{_baseUrl}?pageNumber={pageNumber}&pageSize={pageSize}");
-                return contacts ?? new List<ContactDTO>();
+                _httpClient = httpClient;
+                _baseUrl = configuration["ApiSettings:BaseUrl"]
+                           ?? throw new InvalidOperationException("API Base URL is not configured.");
             }
-            catch (Exception ex)
-            {
-                // Log error as needed
-                throw new ApplicationException("Error fetching contacts", ex);
-            }
-        }
 
-        public async Task<List<ContactDTO>> SearchContacts(string name, int pageNumber, int pageSize)
-        {
-            return await _httpClient.GetFromJsonAsync<List<ContactDTO>>(
-                $"{_baseUrl}/search?name={name}&pageNumber={pageNumber}&pageSize={pageSize}");
-        }
+            public async Task<IEnumerable<ContactDTO>> GetContactsAsync(int pageNumber, int pageSize)
+            {
+                return await _httpClient.GetFromJsonAsync<IEnumerable<ContactDTO>>(
+                           $"{_baseUrl}?pageNumber={pageNumber}&pageSize={pageSize}")
+                       ?? new List<ContactDTO>();
+            }
 
-        public async Task<ContactDTO> GetContactById(int id)
-        {
-            try
+            public async Task<IEnumerable<ContactDTO>> SearchContactAsync(string name, int pageNumber, int pageSize)
             {
-                var contact = await _httpClient.GetFromJsonAsync<ContactDTO>($"{_baseUrl}/{id}");
-                if (contact == null)
-                {
-                    throw new ApplicationException($"No contact found with id {id}");
-                }
+                return await _httpClient.GetFromJsonAsync<IEnumerable<ContactDTO>>(
+                           $"{_baseUrl}/search?name={name}&pageNumber={pageNumber}&pageSize={pageSize}")
+                       ?? new List<ContactDTO>();
+            }
 
-                return contact;
-            }
-            catch (Exception ex)
+            public async Task<ContactDTO> GetContactByIdAsync(int id)
             {
-                throw new ApplicationException($"Error fetching contact with id {id}", ex);
+                return await _httpClient.GetFromJsonAsync<ContactDTO>($"{_baseUrl}/{id}")
+                       ?? throw new InvalidOperationException($"No contact found with id {id}");
             }
-        }
 
-        public async Task<HttpResponseMessage> CreateContact(ContactDTO contact)
-        {
-            try
+            public async Task<ContactDTO> CreateContactAsync(ContactDTO contact)
             {
-                return await _httpClient.PostAsJsonAsync(_baseUrl, contact);
+                var response = await _httpClient.PostAsJsonAsync(_baseUrl, contact);
+                response.EnsureSuccessStatusCode();
+                return await response.Content.ReadFromJsonAsync<ContactDTO>();
             }
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Error creating contact", ex);
-            }
-        }
 
-        public async Task<HttpResponseMessage> UpdateContact(int id, ContactDTO contact)
-        {
-            try
+            public async Task<bool> UpdateContactAsync(int id, ContactDTO contact)
             {
-                return await _httpClient.PutAsJsonAsync($"{_baseUrl}/{id}", contact);
+                var response = await _httpClient.PutAsJsonAsync($"{_baseUrl}/{id}", contact);
+                return response.IsSuccessStatusCode;
             }
-            catch (Exception ex)
-            {
-                throw new ApplicationException($"Error updating contact with id {id}", ex);
-            }
-        }
 
-        public async Task<HttpResponseMessage> DeleteContact(int id)
-        {
-            try
+            public async Task<bool> DeleteContactAsync(int id)
             {
-                return await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException($"Error deleting contact with id {id}", ex);
+                var response = await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
+                return response.IsSuccessStatusCode;
             }
         }
     }

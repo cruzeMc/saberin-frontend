@@ -9,42 +9,30 @@ intuitive user interface for managing contacts and their addresses while interac
 
 - **Blazor WebAssembly** for a modern client-side application.
 - **Bootstrap UI** for a clean and responsive design.
-- **CRUD operations** for managing contacts and addresses.
 - **Pagination support** for better data handling.
 - **API Integration** with the backend for seamless data management.
 
 ## Folder Structure
 
 ```
-ContactManagerFrontend/
+BlazorApp2/
 ├── wwwroot/ # Static assets (CSS, JS, etc.)
 ├── Pages/
 │   ├── Contacts.razor # Displays a paginated list of contacts.
-│   ├── ContactForm.razor # Form for adding/editing contacts.
-│   ├── ContactDetails.razor # Shows details of a specific contact.
-│   ├── Index.razor # Home page.
-│   ├── Error.razor # Error handling page.
-├── Components/
-│   ├── Pagination.razor # Component for pagination.
-│   ├── AddressForm.razor # Address entry component.
-│   ├── ContactList.razor # Displays contacts in a table.
+│   ├── CreateContact.razor # Form for adding contacts.
+│   ├── EditContact.razor # Form for edit contacts.
+│   ├── Home.razor # Home page which allows for searching.
+│   ├── SearchResults.razor # Page with search results.
+│   ├── ViewContact.razor # Page which allows for viewing of individual contac.
 ├── Services/
 │   ├── ContactService.cs # Handles API calls for contacts.
-│   ├── AddressService.cs # Handles API calls for addresses.
-├── Models/
-│   ├── Contact.cs # Defines Contact model.
-│   ├── Address.cs # Defines Address model.
-│   ├── ApiResponse.cs # Model for API responses.
-├── DTOs/
-│   ├── ContactDTO.cs # DTO for contacts.
-│   ├── AddressDTO.cs # DTO for addresses.
-├── Shared/
+├── Layout/
 │   ├── MainLayout.razor # Main UI layout.
 │   ├── NavMenu.razor # Navigation menu.
 │   ├── Footer.razor # Footer component.
 ├── App.razor # Root Blazor component.
 ├── Program.cs # Configures Blazor services.
-└── ContactManagerFrontend.csproj # Project file.
+└── BlazorApp2.csproj # Project file.
 ```
 
 ## Setup Instructions
@@ -54,9 +42,11 @@ ContactManagerFrontend/
     git clone <repository-url>
 
 2. Configure API Endpoint  
-   Modify appsettings.json or ContactService.cs to point to the backend API:
+   Modify appsettings.json to point to the backend API:
    ```bash
-   private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri("https://localhost:5246/api/") };
+   "ApiSettings": {
+         "BaseUrl": "http://localhost:5246/api/contact"
+   }
 
 3. **Restore Dependencies:**  
    From the solution root, run

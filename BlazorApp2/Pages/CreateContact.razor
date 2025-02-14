@@ -1,7 +1,7 @@
 @page "/createcontact"
-@using BlazorApp2.Services
 @using ClassLibrary1.DTOs
-@inject ContactService contactService
+@using ClassLibrary1.Services
+@inject IContactService contactService
 @inject NavigationManager NavigationManager
 
 <div class="container my-5">
@@ -19,10 +19,12 @@
                     <div class="col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
                         <InputText id="firstName" class="form-control" @bind-Value="contact.FirstName" />
+                        <ValidationMessage For="@(() => contact.FirstName)" />
                     </div>
                     <div class="col-md-6">
                         <label for="lastName" class="form-label">Last Name</label>
                         <InputText id="lastName" class="form-control" @bind-Value="contact.LastName" />
+                        <ValidationMessage For="@(() => contact.LastName)" />
                     </div>
                 </div>
 
@@ -32,22 +34,29 @@
                     <div class="col-md-6">
                         <label for="street" class="form-label">Street</label>
                         <InputText id="street" class="form-control" @bind-Value="address.Street" />
+                        <ValidationMessage For="@(() => address.Street)" />
                     </div>
                     <div class="col-md-6">
                         <label for="city" class="form-label">City</label>
                         <InputText id="city" class="form-control" @bind-Value="address.City" />
+                        <ValidationMessage For="@(() => address.City)" />
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="state" class="form-label">State</label>
                         <InputText id="state" class="form-control" @bind-Value="address.State" />
+                        <ValidationMessage For="@(() => address.State)" />
                     </div>
                     <div class="col-md-6">
                         <label for="zip" class="form-label">ZIP Code</label>
                         <InputText id="zip" class="form-control" @bind-Value="address.ZipCode" />
+                        <ValidationMessage For="@(() => address.ZipCode)" />
                     </div>
                 </div>
+
+                <!-- Error Message -->
+                <div class="text-danger" role="alert">@errorMessage</div>
 
                 <!-- Action Buttons -->
                 <div class="d-flex justify-content-end mt-4">
@@ -60,25 +69,33 @@
 </div>
 
 @code {
-    private ContactDTO contact = new ContactDTO();
-    private AddressDTO address = new AddressDTO();
+    private ContactDTO contact = new();
+    private AddressDTO address = new();
+    private string errorMessage = "";
 
     protected override void OnInitialized()
     {
-        // Initialize the Addresses list with one address entry for binding
-        contact.Addresses.Add(address);
+        // Initialize the Addresses list
+        contact.Addresses = new List<AddressDTO> { address };
     }
 
     private async Task HandleValidSubmit()
     {
-        var response = await contactService.CreateContact(contact);
-        if (response.IsSuccessStatusCode)
+        try
         {
-            NavigationManager.NavigateTo("/contacts");
+            var response = await contactService.CreateContactAsync(contact);
+            if (response != null)
+            {
+                NavigationManager.NavigateTo("/contacts");
+            }
+            else
+            {
+                errorMessage = "Failed to create contact. Please try again.";
+            }
         }
-        else
+        catch (Exception ex)
         {
-            // Optionally, display an error message here
+            errorMessage = $"An error occurred: {ex.Message}";
         }
     }
 

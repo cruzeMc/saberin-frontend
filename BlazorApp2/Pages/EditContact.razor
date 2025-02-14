@@ -1,7 +1,7 @@
 @page "/editcontact/{id:int}"
-@using BlazorApp2.Services
 @using ClassLibrary1.DTOs
-@inject ContactService contactService
+@using ClassLibrary1.Services
+@inject IContactService contactService
 @inject NavigationManager NavigationManager
 
 <div class="container my-5">
@@ -21,17 +21,17 @@
             else
             {
                 <EditForm Model="contact" OnValidSubmit="HandleValidSubmit">
-                    <DataAnnotationsValidator />
-                    <ValidationSummary />
+                    <DataAnnotationsValidator/>
+                    <ValidationSummary/>
 
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="firstName" class="form-label">First Name</label>
-                            <InputText id="firstName" class="form-control" @bind-Value="contact.FirstName" />
+                            <InputText id="firstName" class="form-control" @bind-Value="contact.FirstName"/>
                         </div>
                         <div class="col-md-6">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <InputText id="lastName" class="form-control" @bind-Value="contact.LastName" />
+                            <InputText id="lastName" class="form-control" @bind-Value="contact.LastName"/>
                         </div>
                     </div>
 
@@ -42,21 +42,21 @@
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="street" class="form-label">Street</label>
-                                <InputText id="street" class="form-control" @bind-Value="addr.Street" />
+                                <InputText id="street" class="form-control" @bind-Value="addr.Street"/>
                             </div>
                             <div class="col-md-6">
                                 <label for="city" class="form-label">City</label>
-                                <InputText id="city" class="form-control" @bind-Value="addr.City" />
+                                <InputText id="city" class="form-control" @bind-Value="addr.City"/>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="state" class="form-label">State</label>
-                                <InputText id="state" class="form-control" @bind-Value="addr.State" />
+                                <InputText id="state" class="form-control" @bind-Value="addr.State"/>
                             </div>
                             <div class="col-md-6">
                                 <label for="zip" class="form-label">ZIP Code</label>
-                                <InputText id="zip" class="form-control" @bind-Value="addr.ZipCode" />
+                                <InputText id="zip" class="form-control" @bind-Value="addr.ZipCode"/>
                             </div>
                         </div>
                     }
@@ -82,20 +82,19 @@
 </div>
 
 @code {
-    [Parameter]
-    public int id { get; set; }
+    [Parameter] public int id { get; set; }
 
     private ContactDTO contact;
 
     protected override async Task OnInitializedAsync()
     {
-        contact = await contactService.GetContactById(id);
+        contact = await contactService.GetContactByIdAsync(id);
     }
 
     private async Task HandleValidSubmit()
     {
-        var response = await contactService.UpdateContact(contact.Id, contact);
-        if (response.IsSuccessStatusCode)
+        var isSuccessful = await contactService.UpdateContactAsync(contact.Id, contact);
+        if (isSuccessful)
         {
             NavigationManager.NavigateTo("/contacts");
         }
@@ -109,4 +108,5 @@
     {
         NavigationManager.NavigateTo("/contacts");
     }
+
 }

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorApp2",
   "resources": {
-    "hash": "sha256-8zMjemIKvwvRAabYUdgBoHCTln1xPwdye0HMK96ousY=",
+    "hash": "sha256-PQzAa5USSlAW5wh4GL+R7qws0oljhD/dYLJOGp0MAjg=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.n41ua9ceve.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.h4ild4sjod.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -25,6 +25,10 @@
       "Microsoft.Extensions.Primitives.3pkwbmnqmy.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.gkumi7kxvo.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.wzrhx8t8bu.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
+      "xunit.abstractions.4ksum12hez.wasm": "xunit.abstractions.wasm",
+      "xunit.assert.y7eb9mzies.wasm": "xunit.assert.wasm",
+      "xunit.core.vzmut3xs2n.wasm": "xunit.core.wasm",
+      "xunit.execution.dotnet.f9tlfgrcb7.wasm": "xunit.execution.dotnet.wasm",
       "Microsoft.CSharp.0krj4ve566.wasm": "Microsoft.CSharp.wasm",
       "Microsoft.VisualBasic.Core.bcw8auwqwc.wasm": "Microsoft.VisualBasic.Core.wasm",
       "Microsoft.VisualBasic.ezua2clavb.wasm": "Microsoft.VisualBasic.wasm",
@@ -201,10 +205,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "ClassLibrary1.a44fcoug9u.wasm": "ClassLibrary1.wasm",
-      "ClassLibrary1.u7n0vb70xg.pdb": "ClassLibrary1.pdb",
-      "BlazorApp2.exhwwnrg67.wasm": "BlazorApp2.wasm",
-      "BlazorApp2.dz2q5te4vu.pdb": "BlazorApp2.pdb"
+      "ClassLibrary1.pbhtzll8ek.wasm": "ClassLibrary1.wasm",
+      "ClassLibrary1.qvqyid6742.pdb": "ClassLibrary1.pdb",
+      "BlazorApp2.ximys5omxx.wasm": "BlazorApp2.wasm",
+      "BlazorApp2.y59z5pg4t7.pdb": "BlazorApp2.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8o8n7iomrf.js": "sha256-WIUiy49hHQ3kOAtRdCtUzm3Yg5BnOqCC+Q+kri9Fi1g="
@@ -247,6 +251,10 @@
       "Microsoft.Extensions.Primitives.3pkwbmnqmy.wasm": "sha256-OdxJw7jdILDZ3gOpGiCsOP1rr13RNw5EjKRvXzmr5Lg=",
       "Microsoft.JSInterop.gkumi7kxvo.wasm": "sha256-wG2lM2idoDLOwqFHD84hv6SbaH0Yt59g1BsijrC8V1U=",
       "Microsoft.JSInterop.WebAssembly.wzrhx8t8bu.wasm": "sha256-/Fh5R9UI8OZOGuj4Pz4sd8vLYjZQVqxDj8gWWqd8kA0=",
+      "xunit.abstractions.4ksum12hez.wasm": "sha256-FMbuMTkxDbIP6RfJCxjGvjndsldPgOAoaTQzqmvU+C0=",
+      "xunit.assert.y7eb9mzies.wasm": "sha256-QnLZSE8jXjmO7+W3hqAuwCXDfZGRk9J4FxXPk8G4+LE=",
+      "xunit.core.vzmut3xs2n.wasm": "sha256-FffEFEnxzZPLjB1ykURh7zASLe97ZU/htoyHRdA7FF0=",
+      "xunit.execution.dotnet.f9tlfgrcb7.wasm": "sha256-nRl9xQJ0ODLXGNKtXmB3/XdezAQJVd8Oe/3KZd4A8+U=",
       "Microsoft.CSharp.0krj4ve566.wasm": "sha256-QJKG5agfskYhNg4CWMzF8EqwsNALoPtT7h5pO9k6aHk=",
       "Microsoft.VisualBasic.Core.bcw8auwqwc.wasm": "sha256-Raj1ha4M/EXL7zvyW9Evn28B9GxWHE0gaLR/NXPSrdk=",
       "Microsoft.VisualBasic.ezua2clavb.wasm": "sha256-Wn1A97sEio88/HfvTRdDM1pgRek6RfaNgVkwzSIvIAw=",
@@ -414,16 +422,19 @@
       "WindowsBase.ovqw333kan.wasm": "sha256-7LCr4nX9JSGuwzMr8Rk8TGvC6ApzQNxCDiMV/0I9JlI=",
       "mscorlib.l6md3pggqy.wasm": "sha256-jZgH0LixLeQKqaq33akQgDGhfE7vbXbHtvCId5HC0Yo=",
       "netstandard.lij9csiyuf.wasm": "sha256-DeeBl9s8G34N3IfYRQ+MoY807amodj8cvpuvUSNaWE4=",
-      "ClassLibrary1.a44fcoug9u.wasm": "sha256-ZnFJiqRR3FSE0v9ZCDnFdQp+lwugtLNkpsdHluxjI/M=",
-      "BlazorApp2.exhwwnrg67.wasm": "sha256-PlFTwFz9JbWJsb8Sj23JUsudmNWC2apRJyBYPpvthV8="
+      "ClassLibrary1.pbhtzll8ek.wasm": "sha256-9cNRp2nZS1A2jISY7J1pUxYTvkCcvJCk08zv6Zb85M4=",
+      "BlazorApp2.ximys5omxx.wasm": "sha256-d4n8xG8uzyjwiVrhesaheI3mUHIhqIT1pZ/ibmU7kB4="
     },
     "pdb": {
-      "ClassLibrary1.u7n0vb70xg.pdb": "sha256-do91/qPEg8rnm7BOA8aUGO48ruR5NqLjmT5OUCluL2c=",
-      "BlazorApp2.dz2q5te4vu.pdb": "sha256-Z9UFe3Tsl0m69Uu09FFtTrKTUO7b7y1hbcLYeblQ1tc="
+      "ClassLibrary1.qvqyid6742.pdb": "sha256-loK6fqOrxY5LquqxId3dis8NnxNhxp4/xQkObdzVLUY=",
+      "BlazorApp2.y59z5pg4t7.pdb": "sha256-JkKGvZx+SYJJVgZokxxtVipJZEkf3rYFc1LivNVnK4s="
     }
   },
   "cacheBootResources": true,
   "debugLevel": -1,
+  "appsettings": [
+    "../appsettings.json"
+  ],
   "globalizationMode": "sharded",
   "extensions": {
     "blazor": {}

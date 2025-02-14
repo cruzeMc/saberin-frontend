@@ -1,16 +1,23 @@
 @page "/viewcontact/{id:int}"
-@using BlazorApp2.Services
 @using ClassLibrary1.DTOs
-@inject ContactService contactService
+@using ClassLibrary1.Services
+@inject IContactService contactService
 @inject NavigationManager NavigationManager
 
 <div class="container my-5">
-    @if (contact == null)
+    @if (isLoading)
     {
         <div class="d-flex justify-content-center">
             <div class="spinner-border text-primary" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
+        </div>
+    }
+    else if (contact == null)
+    {
+        <div class="alert alert-danger text-center">
+            <h5>Contact not found</h5>
+            <button class="btn btn-outline-secondary mt-3" @onclick="BackToContacts">Back to Contacts</button>
         </div>
     }
     else
@@ -21,7 +28,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Contact Information</h5>
-                @if (contact.Addresses != null && contact.Addresses.Any())
+                @if (contact.Addresses?.Any() == true)
                 {
                     <div class="row">
                         @foreach (var addr in contact.Addresses)
@@ -31,9 +38,9 @@
                                     <div class="card-body">
                                         <h6 class="card-subtitle mb-2 text-muted">Address</h6>
                                         <p class="card-text">
-                                            <strong>Street:</strong> @addr.Street<br />
-                                            <strong>City:</strong> @addr.City<br />
-                                            <strong>State:</strong> @addr.State<br />
+                                            <strong>Street:</strong> @addr.Street<br/>
+                                            <strong>City:</strong> @addr.City<br/>
+                                            <strong>State:</strong> @addr.State<br/>
                                             <strong>ZIP:</strong> @addr.ZipCode
                                         </p>
                                     </div>
@@ -57,14 +64,26 @@
 </div>
 
 @code {
-    [Parameter]
-    public int id { get; set; }
+    [Parameter] public int id { get; set; }
 
     private ContactDTO contact;
+    private bool isLoading = true;
 
     protected override async Task OnInitializedAsync()
     {
-        contact = await contactService.GetContactById(id);
+        await LoadContact();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await LoadContact();
+    }
+
+    private async Task LoadContact()
+    {
+        isLoading = true;
+        contact = await contactService.GetContactByIdAsync(id);
+        isLoading = false;
     }
 
     private void BackToContacts()
